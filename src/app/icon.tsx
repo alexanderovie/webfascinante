@@ -13,20 +13,23 @@ export default function Icon() {
     (
       <div
         style={{
-          fontSize: 18,
-          background: 'linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #06b6d4 100%)',
           width: '100%',
           height: '100%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          color: 'white',
-          fontWeight: 'bold',
-          borderRadius: '8px',
-          fontFamily: 'system-ui, -apple-system, sans-serif',
+          background: 'transparent',
         }}
       >
-        FD
+        <img
+          src="/images/Favicon-Fascinante.svg"
+          alt="Fascinante Digital"
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'contain',
+          }}
+        />
       </div>
     ),
     {
