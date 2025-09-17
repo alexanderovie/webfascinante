@@ -97,7 +97,7 @@ const SchemaMarkup = ({ page = 'home' }: SchemaMarkupProps) => {
 
   // Add LocalBusiness schema for contact page
   if (page === 'contact') {
-    baseSchema["@graph"].push({
+    (baseSchema["@graph"] as unknown[]).push({
       "@type": "LocalBusiness",
       "@id": "https://fascinantedigital.com/#localbusiness",
       "name": "Fascinante Digital - Agencia Marketing Digital West Palm Beach",
