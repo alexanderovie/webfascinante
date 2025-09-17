@@ -103,7 +103,7 @@ const SchemaMarkup = ({ page = 'home' }: SchemaMarkupProps) => {
       "name": "Fascinante Digital - Agencia Marketing Digital West Palm Beach",
       "description": "Agencia de marketing digital especializada en empresas latinas en West Palm Beach, Florida. Servicios de SEO, redes sociales y publicidad digital.",
       "url": "https://fascinantedigital.com",
-      "telephone": "+1-305-XXX-XXXX",
+      "telephone": "+1-800-886-4981",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "West Palm Beach",
