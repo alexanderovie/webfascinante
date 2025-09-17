@@ -187,7 +187,6 @@ export const preloadCriticalResources = () => {
     link.rel = 'preload';
     link.href = resource.href;
     link.as = resource.as;
-    if (resource.type) link.type = resource.type;
     if (resource.as === 'font') link.crossOrigin = 'anonymous';
     
     document.head.appendChild(link);
