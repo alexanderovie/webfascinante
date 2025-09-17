@@ -18,18 +18,20 @@ export default function Icon() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          background: 'transparent',
+          background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+          borderRadius: '8px',
         }}
       >
-        <img
-          src="https://fascinantedigital.com/images/Favicon-Fascinante.svg"
-          alt="Fascinante Digital"
+        <div
           style={{
-            width: '100%',
-            height: '100%',
-            objectFit: 'contain',
+            fontSize: '20px',
+            fontWeight: 'bold',
+            color: 'white',
+            fontFamily: 'Inter, sans-serif',
           }}
-        />
+        >
+          FD
+        </div>
       </div>
     ),
     {
