@@ -7,8 +7,9 @@ import PageHero from '@/components/shared/PageHero';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Contact Us - Fascinante Digital',
-  description: 'Contact Us Page - Fascinante Digital',
+  title: 'Contacto Agencia Marketing Digital Florida | Fascinante Digital Miami',
+  description: 'Contacta con Fascinante Digital, agencia de marketing digital en Florida. Consulta gratuita para empresas latinas en Miami, Orlando, Tampa. Llamanos o visita nuestra oficina.',
+  keywords: 'contacto agencia marketing digital florida, fascinante digital miami, consulta marketing digital orlando, agencia digital marketing tampa, contacto marketing digital hispano florida',
 };
 
 const ContactUs = () => {

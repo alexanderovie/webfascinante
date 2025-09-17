@@ -2,6 +2,7 @@ import SmoothScrollProvider from '@/components/shared/SmoothScroll';
 import { ThemeProvider } from '@/components/shared/ThemeProvider';
 import { CriticalResourcePreloader } from '@/components/shared/ResourcePreloader';
 import ClientInitializer from '@/components/shared/ClientInitializer';
+import SchemaMarkup from '@/components/shared/SchemaMarkup';
 import { inter } from '@/utils/font';
 import { ReactNode, Suspense } from 'react';
 import { Metadata } from 'next';
@@ -10,10 +11,10 @@ import '../styles/loading.css';
 import '../styles/professional-loading.css';
 
 export const metadata: Metadata = {
-  title: 'Fascinante Digital - Plataforma Digital de Vanguardia',
-  description: 'Fascinante Digital es tu plataforma digital de vanguardia para el éxito empresarial. Soluciones innovadoras, tecnología de punta y resultados excepcionales.',
-  keywords: 'fascinante digital, plataforma digital, tecnología, innovación, soluciones empresariales',
-  authors: [{ name: 'Fascinante Digital' }],
+  title: 'Agencia Marketing Digital Florida | Fascinante Digital - Servicios Marketing Latino',
+  description: 'Agencia de marketing digital especializada en empresas latinas en Florida. SEO, redes sociales, publicidad digital y marketing digital bilingüe en Miami, Orlando, Tampa. Resultados garantizados.',
+  keywords: 'agencia marketing digital florida, marketing digital latino florida, agencia digital marketing miami, marketing digital hispano florida, seo servicios florida, marketing digital empresas latinas, agencia marketing digital orlando, marketing digital tampa, agencia digital marketing jacksonville, marketing digital fort lauderdale, fascinante digital',
+  authors: [{ name: 'Fascinante Digital - Agencia Marketing Digital Florida' }],
   creator: 'Fascinante Digital',
   publisher: 'Fascinante Digital',
   formatDetection: {
@@ -26,17 +27,17 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Fascinante Digital - Plataforma Digital de Vanguardia',
-    description: 'Fascinante Digital es tu plataforma digital de vanguardia para el éxito empresarial. Soluciones innovadoras, tecnología de punta y resultados excepcionales.',
+    title: 'Agencia Marketing Digital Florida | Fascinante Digital - Servicios Marketing Latino',
+    description: 'Agencia de marketing digital especializada en empresas latinas en Florida. SEO, redes sociales, publicidad digital y marketing digital bilingüe en Miami, Orlando, Tampa. Resultados garantizados.',
     url: 'https://fascinantedigital.com',
-    siteName: 'Fascinante Digital',
-    locale: 'es_ES',
+    siteName: 'Fascinante Digital - Agencia Marketing Digital Florida',
+    locale: 'es_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Fascinante Digital - Plataforma Digital de Vanguardia',
-    description: 'Fascinante Digital es tu plataforma digital de vanguardia para el éxito empresarial.',
+    title: 'Agencia Marketing Digital Florida | Fascinante Digital',
+    description: 'Agencia de marketing digital especializada en empresas latinas en Florida. SEO, redes sociales y publicidad digital.',
     creator: '@fascinantedigital',
   },
   robots: {
@@ -104,6 +105,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body className={`${inter.variable} antialiased`}>
+        <SchemaMarkup type="Organization" page="home" />
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <ClientInitializer />
           <CriticalResourcePreloader />

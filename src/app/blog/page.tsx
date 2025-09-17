@@ -7,8 +7,9 @@ import PageHero from '@/components/shared/PageHero';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Blog - Fascinante Digital',
-  description: 'Descubre las últimas noticias, tendencias y consejos en nuestro blog de Fascinante Digital.',
+  title: 'Blog Marketing Digital Florida | Tips SEO, Redes Sociales | Fascinante Digital',
+  description: 'Blog de marketing digital para empresas latinas en Florida. Tips de SEO, redes sociales, Google Ads, estrategias de marketing digital en Miami, Orlando, Tampa.',
+  keywords: 'blog marketing digital florida, tips seo miami, estrategias redes sociales orlando, marketing digital hispano florida, blog fascinante digital, consejos marketing digital tampa',
 };
 
 const BlogPage = () => {

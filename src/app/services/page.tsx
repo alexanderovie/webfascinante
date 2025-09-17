@@ -9,8 +9,9 @@ import { Metadata } from 'next';
 import { Fragment } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Services - Fascinante Digital',
-  description: 'Descubre nuestros servicios de vanguardia en Fascinante Digital. Soluciones innovadoras para el éxito empresarial.',
+  title: 'Servicios Marketing Digital Florida | SEO, Redes Sociales, Publicidad | Fascinante Digital',
+  description: 'Servicios de marketing digital para empresas latinas en Florida. SEO, redes sociales, Google Ads, Facebook Ads, marketing digital bilingüe en Miami, Orlando, Tampa. Consulta gratuita.',
+  keywords: 'servicios marketing digital florida, seo servicios florida, redes sociales miami, google ads orlando, facebook ads tampa, marketing digital empresas latinas, publicidad digital florida, agencia marketing digital miami',
 };
 
 const ServicesPage = () => {

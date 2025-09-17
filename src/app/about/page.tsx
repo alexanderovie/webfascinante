@@ -13,8 +13,9 @@ import { projectAchievements } from '@/data/achievements';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About - Fascinante Digital',
-  description: 'Conoce más sobre Fascinante Digital. Nuestra misión, visión y equipo que impulsa la innovación digital.',
+  title: 'Sobre Nosotros - Agencia Marketing Digital Florida | Fascinante Digital',
+  description: 'Conoce Fascinante Digital, agencia de marketing digital especializada en empresas latinas en Florida. Equipo bilingüe con más de 10 años de experiencia en Miami, Orlando y Tampa.',
+  keywords: 'agencia marketing digital florida, sobre fascinante digital, equipo marketing digital miami, agencia digital marketing orlando, marketing digital hispano florida, empresa marketing digital tampa',
 };
 
 const AboutPage = () => {

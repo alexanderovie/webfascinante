@@ -47,12 +47,12 @@ const Hero = () => {
           <div className="flex flex-col items-center text-center mb-[70p]">
             <RevealAnimation delay={0.1}>
               <h1 className="text-secondary mb-4 max-w-[1000px] heading-title-case">
-                Fuel your growth with data-driven digital marketing
+                Agencia Marketing Digital Florida - Impulsa Tu Crecimiento Con Estrategias Digitales
               </h1>
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <p className="text-secondary/60 max-w-[850px] mb-7 md:mb-14">
-                Over 15 years of transforming traffic into profit through SEO, SEM, and conversion-focused campaigns.
+                Más de 15 años transformando el tráfico en ganancias a través de SEO, SEM y campañas de marketing digital para empresas latinas en Miami, Orlando y Tampa, Florida.
               </p>
             </RevealAnimation>
             <ul className="flex flex-col md:flex-row gap-4 mb-7 md:mb-14 w-[90%] md:w-auto">
@@ -61,7 +61,7 @@ const Hero = () => {
                   <LinkButton
                     href="/pricing-01"
                     className="btn btn-secondary btn-xl dark:btn-accent w-[90%] sm:w-auto hover:btn-white dark:hover:btn-white-dark">
-                    Get free marketing audit
+                    Auditoría Marketing Digital Gratuita
                   </LinkButton>
                 </li>
               </RevealAnimation>
@@ -70,7 +70,7 @@ const Hero = () => {
                   <LinkButton
                     href="/our-services-01"
                     className="btn hover:btn-secondary dark:btn-dark btn-white border-0 btn-xl dark:bg-accent/20 dark:text-secondary w-[90%] sm:w-auto">
-                    Explore our work
+                    Ver Nuestros Servicios
                   </LinkButton>
                 </li>
               </RevealAnimation>
