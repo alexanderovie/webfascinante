@@ -1,0 +1,137 @@
+/* ========================================
+   TYPOGRAPHY SYSTEM - ELITE & SCALABLE
+   ======================================== */
+
+/* ========================================
+   CAPITALIZATION UTILITIES
+   ======================================== */
+
+/* Badge/Insignia Styles - UPPERCASE for impact */
+.badge-uppercase {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+/* Heading Styles - Title Case for readability */
+.heading-title-case {
+  text-transform: capitalize;
+}
+
+/* Button Styles - Contextual capitalization */
+.btn-primary-case {
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  font-weight: 600;
+}
+
+.btn-secondary-case {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+/* Navigation Styles - Title Case */
+.nav-title-case {
+  text-transform: capitalize;
+}
+
+/* ========================================
+   TYPOGRAPHY SCALE - ELITE SYSTEM
+   ======================================== */
+
+/* Badge Typography */
+.badge-text {
+  font-size: 0.75rem; /* 12px */
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+/* Heading Typography Scale */
+.heading-1 {
+  font-size: 3.5rem; /* 56px */
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.heading-2 {
+  font-size: 2.5rem; /* 40px */
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.heading-3 {
+  font-size: 2rem; /* 32px */
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.heading-4 {
+  font-size: 1.5rem; /* 24px */
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.heading-5 {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.heading-6 {
+  font-size: 1rem; /* 16px */
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+/* ========================================
+   RESPONSIVE TYPOGRAPHY
+   ======================================== */
+
+@media (max-width: 768px) {
+  .heading-1 {
+    font-size: 2.5rem; /* 40px */
+  }
+  
+  .heading-2 {
+    font-size: 2rem; /* 32px */
+  }
+  
+  .heading-3 {
+    font-size: 1.75rem; /* 28px */
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY & PERFORMANCE
+   ======================================== */
+
+/* Smooth font rendering */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Focus states for accessibility */
+.badge-uppercase:focus,
+.btn-primary-case:focus,
+.btn-secondary-case:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* ========================================
+   DARK MODE SUPPORT
+   ======================================== */
+
+@media (prefers-color-scheme: dark) {
+  .badge-uppercase {
+    letter-spacing: 0.06em;
+  }
+  
+  .btn-primary-case {
+    letter-spacing: 0.03em;
+  }
+}

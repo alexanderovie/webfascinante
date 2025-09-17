@@ -1,0 +1,252 @@
+/* ========================================
+   PROFESSIONAL LOADING SYSTEM - SUBTLE & ELEGANT
+   ======================================== */
+
+/* Critical CSS for loading states */
+.initial-load-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.4s ease-out, visibility 0.4s ease-out;
+}
+
+.initial-load-screen.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Subtle skeleton loading animations */
+.skeleton-loading {
+  background: linear-gradient(
+    90deg,
+    #f8f9fa 25%,
+    #e9ecef 50%,
+    #f8f9fa 75%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-loading 2s infinite;
+}
+
+@keyframes skeleton-loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Professional spinner */
+.professional-spinner {
+  border: 2px solid #e5e7eb;
+  border-top: 2px solid #3b82f6;
+  border-radius: 50%;
+  animation: professional-spin 1s linear infinite;
+}
+
+@keyframes professional-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Subtle fade animations */
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.fade-out {
+  animation: fadeOut 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(-10px); }
+}
+
+/* Loading overlay */
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+/* Minimal skeleton components */
+.minimal-skeleton {
+  background: #f8f9fa;
+  border-radius: 4px;
+  animation: skeleton-loading 2s infinite;
+}
+
+.minimal-skeleton-text {
+  height: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.minimal-skeleton-text:last-child {
+  width: 60%;
+  margin-bottom: 0;
+}
+
+.minimal-skeleton-title {
+  height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.minimal-skeleton-avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.minimal-skeleton-image {
+  height: 200px;
+  border-radius: 8px;
+}
+
+/* Inline loading states */
+.inline-loader {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.inline-spinner {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid #e5e7eb;
+  border-top: 2px solid #3b82f6;
+  border-radius: 50%;
+  animation: professional-spin 1s linear infinite;
+}
+
+/* Button loading states */
+.btn-loading {
+  position: relative;
+  color: transparent;
+}
+
+.btn-loading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid transparent;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  animation: professional-spin 1s linear infinite;
+}
+
+/* Progressive image loading */
+.progressive-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.progressive-image-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progressive-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease-out;
+}
+
+.progressive-image.loaded img {
+  opacity: 1;
+}
+
+.progressive-image:not(.loaded) img {
+  opacity: 0;
+}
+
+/* Dark mode support */
+.dark .initial-load-screen {
+  background: rgba(0, 0, 0, 0.95);
+}
+
+.dark .skeleton-loading {
+  background: linear-gradient(
+    90deg,
+    #374151 25%,
+    #4b5563 50%,
+    #374151 75%
+  );
+}
+
+.dark .minimal-skeleton {
+  background: #374151;
+}
+
+.dark .loading-overlay {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.dark .progressive-image-placeholder {
+  background: #374151;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .skeleton-loading,
+  .professional-spinner,
+  .inline-spinner,
+  .btn-loading::after {
+    animation: none;
+  }
+  
+  .fade-in,
+  .fade-out {
+    animation: none;
+  }
+}
+
+/* Performance optimizations */
+.skeleton-loading,
+.professional-spinner,
+.inline-spinner {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .minimal-skeleton-image {
+    height: 150px;
+  }
+  
+  .minimal-skeleton-title {
+    height: 1.25rem;
+  }
+}
