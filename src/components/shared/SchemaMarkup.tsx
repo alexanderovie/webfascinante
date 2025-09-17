@@ -100,21 +100,21 @@ const SchemaMarkup = ({ page = 'home' }: SchemaMarkupProps) => {
     baseSchema["@graph"].push({
       "@type": "LocalBusiness",
       "@id": "https://fascinantedigital.com/#localbusiness",
-      "name": "Fascinante Digital - Agencia Marketing Digital Miami",
-      "description": "Agencia de marketing digital especializada en empresas latinas en Miami, Florida. Servicios de SEO, redes sociales y publicidad digital.",
+      "name": "Fascinante Digital - Agencia Marketing Digital West Palm Beach",
+      "description": "Agencia de marketing digital especializada en empresas latinas en West Palm Beach, Florida. Servicios de SEO, redes sociales y publicidad digital.",
       "url": "https://fascinantedigital.com",
       "telephone": "+1-305-XXX-XXXX",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Miami",
+        "addressLocality": "West Palm Beach",
         "addressRegion": "FL", 
-        "postalCode": "33101",
+        "postalCode": "33411",
         "addressCountry": "US"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "25.7617",
-        "longitude": "-80.1918"
+        "latitude": "26.7153",
+        "longitude": "-80.0534"
       },
       "openingHours": "Mo-Fr 09:00-18:00",
       "priceRange": "$$",
