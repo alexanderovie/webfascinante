@@ -18,8 +18,8 @@ const SchemaMarkup = ({ page = 'home' }: SchemaMarkupProps) => {
         "logo": {
           "@type": "ImageObject",
           "url": "https://fascinantedigital.com/images/shared/logo.svg",
-          "width": 200,
-          "height": 60
+          "width": "200px",
+          "height": "60px"
         },
         "description": "Agencia de marketing digital especializada en empresas latinas en Florida. Servicios de SEO, redes sociales, Google Ads y marketing digital bilingüe en Miami, Orlando, Tampa.",
         "foundingDate": "2010",
