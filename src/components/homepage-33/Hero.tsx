@@ -47,12 +47,12 @@ const Hero = () => {
           <div className="flex flex-col items-center text-center mb-[70p]">
             <RevealAnimation delay={0.1}>
               <h1 className="text-secondary mb-4 max-w-[1000px] heading-title-case">
-                Agencia Marketing Digital Florida - Impulsa Tu Crecimiento Con Estrategias Digitales
+                Agencia Marketing Digital Florida - Crecimiento Digital Garantizado
               </h1>
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <p className="text-secondary/60 max-w-[850px] mb-7 md:mb-14">
-                Más de 15 años transformando el tráfico en ganancias a través de SEO, SEM y campañas de marketing digital para empresas latinas en Miami, Orlando y Tampa, Florida.
+                Más de 15 años transformando tráfico en ganancias con SEO, SEM y marketing digital para empresas latinas en Florida.
               </p>
             </RevealAnimation>
             <ul className="flex flex-col md:flex-row gap-4 mb-7 md:mb-14 w-[90%] md:w-auto">
