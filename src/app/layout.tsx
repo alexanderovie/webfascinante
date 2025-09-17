@@ -27,10 +27,18 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   icons: {
-    icon: '/icon',
-    apple: '/apple-icon',
+    icon: [
+      { url: '/icon', sizes: '32x32', type: 'image/png' },
+      { url: '/icon-16', sizes: '16x16', type: 'image/png' },
+      { url: '/icon-192', sizes: '192x192', type: 'image/png' },
+      { url: '/icon-512', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-icon', sizes: '180x180', type: 'image/png' },
+    ],
     shortcut: '/icon',
   },
+  manifest: '/manifest.json',
   openGraph: {
     title: 'Agencia Marketing Digital Florida | Fascinante Digital - Servicios Marketing Latino',
     description: 'Agencia de marketing digital especializada en empresas latinas en Florida. SEO, redes sociales, publicidad digital y marketing digital bilingüe en Miami, Orlando, Tampa. Resultados garantizados.',

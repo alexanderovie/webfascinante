@@ -1,0 +1,49 @@
+{
+  "favicon_generation": {
+    "api_key": "your-api-key",
+    "master_picture": {
+      "type": "url",
+      "url": "https://fascinantedigital.com/images/shared/logo.svg"
+    },
+    "favicon_design": {
+      "desktop_browser": {},
+      "ios": {
+        "picture_aspect": "background_and_margin",
+        "background_color": "#ffffff",
+        "margin": "14%"
+      },
+      "windows": {
+        "picture_aspect": "no_change",
+        "background_color": "#2d89ef"
+      },
+      "android_chrome": {
+        "picture_aspect": "no_change",
+        "theme_color": "#ffffff",
+        "manifest": {
+          "name": "Fascinante Digital",
+          "display": "standalone",
+          "orientation": "not_set",
+          "on_conflict": "override",
+          "declared": true
+        }
+      },
+      "safari_pinned_tab": {
+        "picture_aspect": "silhouette",
+        "threshold": 60,
+        "theme_color": "#5bbad5"
+      }
+    },
+    "settings": {
+      "compression": 5,
+      "scaling_algorithm": "Mitchell",
+      "error_on_image_too_small": false,
+      "readme_file": false,
+      "html_code_file": false,
+      "use_path_as_is": false
+    },
+    "versioning": {
+      "param_name": "v",
+      "param_value": "1.0.0"
+    }
+  }
+}

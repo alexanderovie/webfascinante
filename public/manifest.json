@@ -1,0 +1,27 @@
+{
+  "name": "Fascinante Digital - Agencia Marketing Digital Florida",
+  "short_name": "Fascinante Digital",
+  "description": "Agencia de marketing digital especializada en empresas latinas en Florida. SEO, redes sociales, publicidad digital y marketing digital bilingüe.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e40af",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "marketing", "productivity"],
+  "lang": "es",
+  "dir": "ltr"
+}
