@@ -39,14 +39,14 @@ const AboutPage = () => {
           <div className="main-container">
             <div className="mb-14 md:mb-[70px] space-y-3 text-center">
               <RevealAnimation delay={0.2}>
-                <h2>Over a decade of experience in this field.</h2>
-              </RevealAnimation>
-              <RevealAnimation delay={0.3}>
-                <p className="max-w-[744px] mx-auto">
-                  With more than ten years of hands-on experience, we&apos;ve built a strong foundation of knowledge, skill,
-                  and trust in our industry. Over the years, we&apos;ve navigated evolving trends, embraced new technologies,
-                  and
-                </p>
+              <h2>Over a decade of digital marketing excellence in Florida.</h2>
+            </RevealAnimation>
+            <RevealAnimation delay={0.3}>
+              <p className="max-w-[744px] mx-auto">
+                With more than ten years of hands-on experience in digital marketing, we&apos;ve built a strong foundation of knowledge, skill,
+                and trust in the Florida market. Over the years, we&apos;ve navigated evolving digital trends, embraced new marketing technologies,
+                and helped hundreds of Latino businesses grow their online presence.
+              </p>
               </RevealAnimation>
             </div>
             <OurAchievements achievements={projectAchievements} />
@@ -55,11 +55,11 @@ const AboutPage = () => {
         <WhyChooseUs />
         <Team className="bg-background-3 dark:bg-background-7 py-[100px]" badgeColor="badge-cyan" />
         <ReviewsV3
-          badgeText="Customer Success"
+          badgeText="Client Success"
           buttonText="View all reviews"
           badgeColor="badge-cyan"
           title="Real people. Real results."
-          description="Nextsaas delivered our entire platform ahead of schedule—flawless execution and real partnership."
+          description="Fascinante Digital delivered our entire digital marketing strategy ahead of schedule—flawless execution and real partnership that grew our business 300%."
         />
         <CTA />
       </main>

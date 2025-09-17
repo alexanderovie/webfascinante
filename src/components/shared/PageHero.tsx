@@ -38,7 +38,7 @@ const PageHero = ({ className, title, heading, link }: PageHeroProps) => {
           <div className="text-center space-y-6">
             <RevealAnimation delay={0.2}>
               <div className="inline-flex items-center">
-                <span className="badge badge-green">Services</span>
+                <span className="badge badge-green">{title === 'About us' ? 'About' : 'Services'}</span>
               </div>
             </RevealAnimation>
             
@@ -50,12 +50,26 @@ const PageHero = ({ className, title, heading, link }: PageHeroProps) => {
             
             <RevealAnimation delay={0.35}>
               <div className="max-w-2xl mx-auto text-center space-y-3">
-                <p className="text-lg">
-                  Whether you have a question, need technical assistance, or just want some guidance, our support team is here to help.
-                </p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
-                  Available around the clock for quick and friendly support.
-                </p>
+                {title === 'About us' ? (
+                  <>
+                    <p className="text-lg">
+                      Learn about Fascinante Digital, your trusted digital marketing agency in Florida. 
+                      We specialize in helping Latino businesses grow through strategic digital marketing.
+                    </p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      Over 15 years of experience serving Miami, Orlando, and Tampa markets.
+                    </p>
+                  </>
+                ) : (
+                  <>
+                    <p className="text-lg">
+                      Whether you have a question, need technical assistance, or just want some guidance, our support team is here to help.
+                    </p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      Available around the clock for quick and friendly support.
+                    </p>
+                  </>
+                )}
               </div>
             </RevealAnimation>
             
