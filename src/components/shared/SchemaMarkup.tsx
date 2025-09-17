@@ -1,11 +1,9 @@
-import { Metadata } from 'next';
-
 interface SchemaMarkupProps {
   type?: 'Organization' | 'Service' | 'LocalBusiness';
   page?: 'home' | 'about' | 'services' | 'blog' | 'contact';
 }
 
-const SchemaMarkup = ({ type = 'Organization', page = 'home' }: SchemaMarkupProps) => {
+const SchemaMarkup = ({ page = 'home' }: SchemaMarkupProps) => {
   const baseSchema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -95,6 +93,7 @@ const SchemaMarkup = ({ type = 'Organization', page = 'home' }: SchemaMarkupProp
       "name": "Servicios Marketing Digital Florida",
       "description": "Servicios completos de marketing digital para empresas latinas en Florida: SEO, redes sociales, Google Ads, Facebook Ads, marketing digital bilingüe.",
       "provider": {
+        "@type": "Organization",
         "@id": "https://fascinantedigital.com/#organization"
       },
       "serviceType": [
