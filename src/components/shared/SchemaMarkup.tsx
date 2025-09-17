@@ -106,7 +106,6 @@ const SchemaMarkup = ({ page = 'home' }: SchemaMarkupProps) => {
       "telephone": "+1-305-XXX-XXXX",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "123 Main Street",
         "addressLocality": "Miami",
         "addressRegion": "FL", 
         "postalCode": "33101",
