@@ -92,17 +92,14 @@ export default function RootLayout({
         }} />
         
                {/* Preload critical resources */}
+               <link rel="preconnect" href="https://fonts.googleapis.com" />
+               <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
                <link rel="preload" href="https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/images/shared/logo.svg" as="image" />
         <link rel="preload" href="/images/home-page-33/hero-bg.png" as="image" />
         
         {/* DNS prefetch for external resources */}
-        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
-        
-        {/* Preconnect to critical origins */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body className={`${inter.variable} antialiased`}>
         <SchemaMarkup type="Organization" page="home" />

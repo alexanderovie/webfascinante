@@ -87,7 +87,7 @@ const SchemaMarkup = ({ page = 'home' }: SchemaMarkupProps) => {
 
   // Add Service schema for services page
   if (page === 'services') {
-    (baseSchema["@graph"] as any[]).push({
+    (baseSchema["@graph"] as unknown[]).push({
       "@type": "Service",
       "@id": "https://fascinantedigital.com/#service",
       "name": "Servicios Marketing Digital Florida",
