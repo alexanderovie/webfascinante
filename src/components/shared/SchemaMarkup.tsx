@@ -1,4 +1,4 @@
-import type { Organization, LocalBusiness, Service, Graph, WithContext } from 'schema-dts';
+import type { Organization, LocalBusiness, Service } from 'schema-dts';
 
 interface SchemaMarkupProps {
   type?: 'Organization' | 'Service' | 'LocalBusiness';
@@ -6,7 +6,7 @@ interface SchemaMarkupProps {
 }
 
 const SchemaMarkup = ({ page = 'home' }: SchemaMarkupProps) => {
-  const baseSchema: WithContext<Graph> = {
+  const baseSchema = {
     "@context": "https://schema.org",
     "@graph": [
       {

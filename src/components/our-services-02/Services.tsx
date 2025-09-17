@@ -71,15 +71,15 @@ const Services = () => {
                 <div className="col-span-12 lg:col-span-6">
                   <div className="space-y-8">
                     <div className="space-y-2">
-                      <h3>Machine learning &amp; AI</h3>
+                      <h3>Website Development & Landing Pages</h3>
                       <p className="max-w-[493px] w-full">
-                        Utilize advanced predictive analytics to proactively identify potential threats before they
-                        escalate. by analyzing patterns and trends in data.
+                        We create high-converting websites and professional landing pages that turn visitors into customers. 
+                        Every site is built for performance and results.
                       </p>
                     </div>
                     <div>
                       <LinkButton
-                        href="/our-services/machine-learning-and-ai"
+                        href="/our-services/website-development"
                         className="btn hover:btn-primary btn-white dark:btn-transparent btn-md">
                         View more
                       </LinkButton>
@@ -95,15 +95,15 @@ const Services = () => {
                 <div className="col-span-12 lg:col-span-6">
                   <div className="space-y-8">
                     <div className="space-y-2">
-                      <h3>Business analysis</h3>
+                      <h3>Analytics & Tracking Setup</h3>
                       <p className="max-w-[380px] w-full">
-                        Continuously monitor for vulnerabilities and implement proactive measures to prevent cyber
-                        attacks before they can occur.
+                        We configure Meta Analytics, Google Analytics, conversion tracking, and CRM integration 
+                        to give you complete visibility into your marketing performance.
                       </p>
                     </div>
                     <div>
                       <LinkButton
-                        href="/our-services/business-analysis"
+                        href="/our-services/analytics-tracking"
                         className="btn hover:btn-primary btn-white dark:btn-transparent btn-md">
                         View more
                       </LinkButton>
