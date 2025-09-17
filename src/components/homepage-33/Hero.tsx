@@ -47,7 +47,7 @@ const Hero = () => {
           <div className="flex flex-col items-center text-center mb-[70p]">
             <RevealAnimation delay={0.1}>
               <h1 className="text-secondary mb-4 max-w-[1000px] heading-title-case">
-                Agencia Marketing Digital Florida - Crecimiento Digital Garantizado
+                Impulsa Tu Crecimiento Con Marketing Digital Florida
               </h1>
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
