@@ -13,8 +13,8 @@ export default function Icon() {
     (
       <div
         style={{
-          fontSize: 20,
-          background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+          fontSize: 18,
+          background: 'linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #06b6d4 100%)',
           width: '100%',
           height: '100%',
           display: 'flex',
@@ -22,7 +22,8 @@ export default function Icon() {
           justifyContent: 'center',
           color: 'white',
           fontWeight: 'bold',
-          borderRadius: '6px',
+          borderRadius: '8px',
+          fontFamily: 'system-ui, -apple-system, sans-serif',
         }}
       >
         FD
