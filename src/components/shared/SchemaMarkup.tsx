@@ -89,7 +89,7 @@ const SchemaMarkup = ({ page = 'home' }: SchemaMarkupProps) => {
 
   // Add Service schema for services page
   if (page === 'services') {
-    baseSchema["@graph"].push({
+    (baseSchema["@graph"] as any[]).push({
       "@type": "Service",
       "@id": "https://fascinantedigital.com/#service",
       "name": "Servicios Marketing Digital Florida",
@@ -99,7 +99,7 @@ const SchemaMarkup = ({ page = 'home' }: SchemaMarkupProps) => {
 
   // Add LocalBusiness schema for contact page
   if (page === 'contact') {
-    baseSchema["@graph"].push({
+    (baseSchema["@graph"] as any[]).push({
       "@type": "LocalBusiness",
       "@id": "https://fascinantedigital.com/#localbusiness",
       "name": "Fascinante Digital - Agencia Marketing Digital West Palm Beach",
@@ -109,7 +109,7 @@ const SchemaMarkup = ({ page = 'home' }: SchemaMarkupProps) => {
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "West Palm Beach",
-        "addressRegion": "FL", 
+        "addressRegion": "FL",
         "postalCode": "33411",
         "addressCountry": "US"
       },
