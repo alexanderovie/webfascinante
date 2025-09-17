@@ -22,7 +22,7 @@ export default function AppleIcon() {
         }}
       >
         <img
-          src="/images/Favicon-Fascinante.svg"
+          src="https://fascinantedigital.com/images/Favicon-Fascinante.svg"
           alt="Fascinante Digital"
           style={{
             width: '100%',
