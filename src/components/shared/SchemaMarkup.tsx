@@ -1,10 +1,12 @@
+import type { Organization, LocalBusiness, Service, Graph, WithContext } from 'schema-dts';
+
 interface SchemaMarkupProps {
   type?: 'Organization' | 'Service' | 'LocalBusiness';
   page?: 'home' | 'about' | 'services' | 'blog' | 'contact';
 }
 
 const SchemaMarkup = ({ page = 'home' }: SchemaMarkupProps) => {
-  const baseSchema = {
+  const baseSchema: WithContext<Graph> = {
     "@context": "https://schema.org",
     "@graph": [
       {
@@ -87,7 +89,7 @@ const SchemaMarkup = ({ page = 'home' }: SchemaMarkupProps) => {
 
   // Add Service schema for services page
   if (page === 'services') {
-    (baseSchema["@graph"] as unknown[]).push({
+    baseSchema["@graph"].push({
       "@type": "Service",
       "@id": "https://fascinantedigital.com/#service",
       "name": "Servicios Marketing Digital Florida",
@@ -97,7 +99,7 @@ const SchemaMarkup = ({ page = 'home' }: SchemaMarkupProps) => {
 
   // Add LocalBusiness schema for contact page
   if (page === 'contact') {
-    (baseSchema["@graph"] as unknown[]).push({
+    baseSchema["@graph"].push({
       "@type": "LocalBusiness",
       "@id": "https://fascinantedigital.com/#localbusiness",
       "name": "Fascinante Digital - Agencia Marketing Digital West Palm Beach",
