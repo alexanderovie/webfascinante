@@ -26,15 +26,14 @@ const Services = () => {
                 <div className="col-span-12 lg:col-span-6">
                   <div className="space-y-8">
                     <div className="space-y-2">
-                      <h3>Big data consulting</h3>
+                      <h3>Google Business Profile Optimization</h3>
                       <p className="max-w-[410px] w-full">
-                        Utilize comprehensive data security frameworks to effectively safeguard sensitive information
-                        from unauthorized access and breaches.
+                        We love creating and optimizing Google Business Profiles to boost your local visibility and attract more customers in your area.
                       </p>
                     </div>
                     <div>
                       <LinkButton
-                        href="/our-services/big-data-consulting"
+                        href="/our-services/google-business-profile"
                         className="btn hover:btn-primary btn-white dark:btn-transparent btn-md">
                         Read more
                       </LinkButton>

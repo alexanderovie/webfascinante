@@ -87,63 +87,11 @@ const SchemaMarkup = ({ page = 'home' }: SchemaMarkupProps) => {
 
   // Add Service schema for services page
   if (page === 'services') {
-    baseSchema["@graph"].push({
+    (baseSchema["@graph"] as any[]).push({
       "@type": "Service",
       "@id": "https://fascinantedigital.com/#service",
       "name": "Servicios Marketing Digital Florida",
-      "description": "Servicios completos de marketing digital para empresas latinas en Florida: SEO, redes sociales, Google Ads, Facebook Ads, marketing digital bilingüe.",
-      "provider": {
-        "@type": "Organization",
-        "@id": "https://fascinantedigital.com/#organization"
-      },
-      "serviceType": [
-        "SEO Services",
-        "Social Media Marketing", 
-        "Google Ads Management",
-        "Facebook Ads Management",
-        "Digital Marketing Strategy",
-        "Marketing Digital Latino"
-      ],
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "Miami",
-          "containedInPlace": {
-            "@type": "State", 
-            "name": "Florida"
-          }
-        },
-        {
-          "@type": "City",
-          "name": "Orlando", 
-          "containedInPlace": {
-            "@type": "State",
-            "name": "Florida"
-          }
-        },
-        {
-          "@type": "City",
-          "name": "Tampa",
-          "containedInPlace": {
-            "@type": "State",
-            "name": "Florida"
-          }
-        }
-      ],
-      "audience": [
-        {
-          "@type": "Audience",
-          "name": "Empresas Latinas en Florida"
-        },
-        {
-          "@type": "Audience", 
-          "name": "Pequeñas y Medianas Empresas"
-        },
-        {
-          "@type": "Audience",
-          "name": "Startups Hispanas"
-        }
-      ]
+      "description": "Servicios completos de marketing digital para empresas latinas en Florida: SEO, redes sociales, Google Ads, Facebook Ads, marketing digital bilingüe."
     });
   }
 
