@@ -26,6 +26,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  icons: {
+    icon: '/icon',
+    apple: '/apple-icon',
+    shortcut: '/icon',
+  },
   openGraph: {
     title: 'Agencia Marketing Digital Florida | Fascinante Digital - Servicios Marketing Latino',
     description: 'Agencia de marketing digital especializada en empresas latinas en Florida. SEO, redes sociales, publicidad digital y marketing digital bilingüe en Miami, Orlando, Tampa. Resultados garantizados.',
