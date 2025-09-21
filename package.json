@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "postbuild": "next-sitemap",
+    "postbuild": "cross-env NODE_ENV=production next-sitemap",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
@@ -44,6 +44,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "clsx": "^2.1.1",
+    "cross-env": "10.0.0",
     "eslint": "^9",
     "eslint-config-next": "15.4.6",
     "husky": "^9.1.7",
