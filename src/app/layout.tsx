@@ -29,18 +29,20 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
-      { url: '/favicons/favicon.svg', type: 'image/svg+xml' },
-      { url: '/favicons/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicons/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/favicons/favicon-192x192.png', sizes: '192x192', type: 'image/png' },
-      { url: '/favicons/favicon-512x512.png', sizes: '512x512', type: 'image/png' },
+      { url: '/icon0.svg', type: 'image/svg+xml' },
+      { url: '/icon1.png', sizes: '192x192', type: 'image/png' },
     ],
     apple: [
-      { url: '/favicons/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
     ],
     shortcut: '/favicon.ico',
   },
   manifest: '/manifest.json',
+  appleWebApp: {
+    title: 'Fascinante',
+    capable: true,
+    statusBarStyle: 'default',
+  },
   openGraph: {
     title: 'Agencia Marketing Digital Florida | Fascinante Digital - Servicios Marketing Latino',
     description: 'Agencia de marketing digital especializada en empresas latinas en Florida. SEO, redes sociales, publicidad digital y marketing digital bilingüe en Miami, Orlando, Tampa. Resultados garantizados.',
@@ -138,3 +140,4 @@ export default function RootLayout({
     </html>
   );
 }
+
