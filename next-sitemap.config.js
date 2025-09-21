@@ -26,26 +26,33 @@ module.exports = {
     // Excluir páginas de autenticación
     '/login-*',
     '/signup-*',
-    // Excluir páginas de políticas
+    
+    // === PÁGINAS TEMPORALMENTE EXCLUIDAS (hasta que estén listas) ===
+    // Políticas y términos
     '/terms-conditions',
     '/privacy',
     '/refund-policy',
     '/affiliate-policy',
     '/gdpr',
-    // Excluir páginas de soporte
+    // Páginas de soporte
     '/tutorial',
     '/documentation',
     '/faq',
     '/support',
     '/changelog',
-    // Excluir páginas de características
+    // Páginas de características y funcionalidades
     '/features-*',
-    '/integration-*',
-    '/process-*',
+    '/integration-01',
+    '/integration-02', 
+    '/integration-03',
+    '/process-01',
+    '/process-02',
     '/analytics',
-    '/testimonial-*',
+    '/testimonial-01',
+    '/testimonial-02',
     '/case-study',
-    '/our-team-*',
+    '/our-team-01',
+    '/our-team-02',
     '/pricing-*',
     '/use-case',
     '/affiliates',
